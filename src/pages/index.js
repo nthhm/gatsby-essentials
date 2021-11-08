@@ -27,7 +27,11 @@ export default function Home({ data }) {
       </header>
       <section className="hero">
         <figure>
-          <Img fluid={data.hero.childImageSharp.fluid} alt="" />
+          <Img
+            fluid={data.hero.childImageSharp.fluid}
+            alt=""
+            style={{ height: "100%" }}
+          />
         </figure>
         <div className="catch">
           <h1>
@@ -88,7 +92,11 @@ export default function Home({ data }) {
       <section className="photo">
         <h2 className="sr-only">Photo</h2>
         <figure>
-          <Img fluid={data.berry.childImageSharp.fluid} alt="" />
+          <Img
+            fluid={data.berry.childImageSharp.fluid}
+            alt="赤く熟したベリー"
+            style={{ height: "100%" }}
+          />
         </figure>
       </section>
       <footer className="footer">
